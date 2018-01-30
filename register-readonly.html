@@ -1,12 +1,37 @@
 ---
 layout: default
 ---
-<section class="my-3" id="signIn">
-  <div class="card bg-danger border-danger">
-    <div class="card-body text-center">
-      <h4 class="card-title">Welcome, Simon.</h4>
-      <p class="card-text">Click below to sign in and mark yourself as present.</p>
-      <a href="#" class="btn btn-success">Sign In</a>
-    </div>
-  </div>
+<section class="my-3" id="register">
+  <table class="table table-reponsive" id="registerTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th class="text-center">Status</th>
+        <th>Last Changed</th>
+        <th>Change Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Simon Fish</td>
+        <td class="text-center">
+          <span class="badge badge-pill badge-success">
+            <i class="fa fa-check-circle"></i> Present
+          </span>
+        </td>
+        <td>Four hours ago (29/01 17:00)</td>
+        <td><button type="button" class="btn btn-warning w-100"><i class="fa fa-sign-out"></i>Sign Out</button></td>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td class="text-center">
+          <span class="badge badge-pill badge-danger">
+            <i class="fa fa-times-circle"></i> Absent
+          </span>
+        </td>
+        <td>Four hours ago (29/01 17:00)</td>
+        <td><button type="button" class="btn btn-primary w-100"><i class="fa fa-sign-in"></i> Sign In</button></td>
+      </tr>
+    </tbody>
+  </table>
 </section>

@@ -2,13 +2,13 @@
 layout: default
 ---
 <section class="my-3" id="register">
-  <table class="table" id="registerTable">
+  <table class="table table-reponsive" id="registerTable">
     <thead>
       <tr>
         <th>Name</th>
         <th class="text-center">Status</th>
         <th>Last Changed</th>
-        <th>Change Status</th>
+        <th>Edit User</th>
       </tr>
     </thead>
     <tbody>
@@ -20,7 +20,10 @@ layout: default
           </span>
         </td>
         <td>Four hours ago (29/01 17:00)</td>
-        <td><button type="button" class="btn btn-warning w-100"><i class="fa fa-sign-out"></i>Sign Out</button></td>
+        <td><div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-warning"><i class="fa fa-pencil-square-o"></i> Edit</button>
+            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Remove</button>
+          </div></td>
       </tr>
       <tr>
         <td>John Doe</td>
@@ -30,7 +33,12 @@ layout: default
           </span>
         </td>
         <td>Four hours ago (29/01 17:00)</td>
-        <td><button type="button" class="btn btn-primary w-100"><i class="fa fa-sign-in"></i> Sign In</button></td>
+        <td>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-warning"><i class="fa fa-pencil-square-o"></i> Edit</button>
+            <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Remove</button>
+          </div>
+        </td>
       </tr>
     </tbody>
   </table>
