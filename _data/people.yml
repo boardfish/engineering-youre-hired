@@ -4,3 +4,24 @@
 - name: John Doe
   status: Present
   time: 2018-02-01 11:05:00
+- name: Eleanor Cox
+  status: Present
+  time: 2018-02-01 08:31:00
+- name: Jack Wright
+  status: Absent
+  time: 2018-02-01 17:05:00
+- name: Andrew Jackson
+  status: Present
+  time: 2018-02-01 06:09:00
+- name: Jenny Flowers
+  status: Present
+  time: 2018-02-01 11:05:00
+- name: Eric Andre
+  status: Present
+  time: 2018-02-01 11:05:00
+- name: George Miller
+  status: Present
+  time: 2018-02-01 11:05:00
+- name: Nadine Pauvis
+  status: Present
+  time: 2018-02-01 11:05:00
