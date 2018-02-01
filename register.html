@@ -12,7 +12,7 @@ layout: default
     </thead>
     <tbody>
       {% for person in site.data.people %}
-      <tr>
+      <tr class="text-center">
         <td>{{ person.name }}</td>
         <td class="text-center">
           <span class="badge badge-pill badge-{% if person.status == "Absent" %}danger{% else %}success{% endif %}">
