@@ -30,7 +30,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - bootstrap
-  - dotiw
 
 
 # Exclude from processing.
