@@ -51,9 +51,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
   <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" charset="utf-8"></script>
 <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.1/jquery.timeago.min.js" integrity="sha256-JAdlnMiYFZRwqQqgiYwLjSkV94QtVzcbvasQMm05THk=" crossorigin="anonymous"></script>
 <script charset="utf-8">
   $(document).ready(function() {
-    $('#registerTable').DataTable();
+    $("abbr").timeago();
+    $('#registerTable').DataTable({
+      dom: ' <"search col-sm-12 col-offset-4 col-4"f><"top"l>rt<"bottom"p><"clear">',
+      "oLanguage": {
+      "sSearch": " "
+      },
+      paging: false,
+      fnDrawCallback: function() {
+        $("#registerTable thead").remove();
+      }
+    });
+    $(".search").addClass("bg-dark text-white pt-3 pb-2")
+    $("#registerTable_filter label").addClass("w-100")
+    $("#registerTable_filter label input").addClass("w-100 mr-5")
   });
 </script>
 </body>
